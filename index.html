@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>Import maps</title>
+  <script type="importmap">
+      {
+        "imports": {
+          "lit-element": "https://ga.jspm.io/npm:lit-element@3.2.3-next.1/development/index.js",
+          "lodash": "https://ga.jspm.io/npm:lodash@4.17.21/lodash.js",
+          "number-to-words": "https://ga.jspm.io/npm:number-to-words@1.2.4/numberToWords.min.js",
+          "react": "https://ga.jspm.io/npm:react@18.3.0-next-e61fd91f5-20220630/dev.index.js",
+          "react-dom": "https://ga.jspm.io/npm:react-dom@18.3.0-next-e61fd91f5-20220630/dev.index.js",
+          "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.3.0-next-e61fd91f5-20220630/dev.client.js"
+        },
+        "scopes": {
+          "https://ga.jspm.io/": {
+            "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/reactive-element.js",
+            "@lit/reactive-element/decorators/base.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/base.js",
+            "@lit/reactive-element/decorators/custom-element.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/custom-element.js",
+            "@lit/reactive-element/decorators/event-options.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/event-options.js",
+            "@lit/reactive-element/decorators/property.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/property.js",
+            "@lit/reactive-element/decorators/query-all.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/query-all.js",
+            "@lit/reactive-element/decorators/query-assigned-elements.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/query-assigned-elements.js",
+            "@lit/reactive-element/decorators/query-assigned-nodes.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/query-assigned-nodes.js",
+            "@lit/reactive-element/decorators/query-async.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/query-async.js",
+            "@lit/reactive-element/decorators/query.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/query.js",
+            "@lit/reactive-element/decorators/state.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.4.1/development/decorators/state.js",
+            "lit-html": "https://ga.jspm.io/npm:lit-html@2.3.1/development/lit-html.js",
+            "process": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.25/nodelibs/browser/process.js",
+            "scheduler": "https://ga.jspm.io/npm:scheduler@0.24.0-next-e61fd91f5-20220630/dev.index.js"
+          }
+        }
+      }
+    </script>
+  <script src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"></script>
+  <script type="module" src="./litty.js"></script>
+  <script type="module" src="./reactive.js"></script>
+  <style>
+    .counterBtn {
+      padding: 1.25em;
+      height: 1rem;
+      font-size: large;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      border: 0;
+      border-radius: 0.5rem;
+    }
+
+    .counterBtn:hover {
+      background-color: #c0bcbc;
+    }
+  </style>
+</head>
+
+<body>
+  <my-element></my-element>
+  <div id="app"></div>
+</body>
+
+</html>
